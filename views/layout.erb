@@ -1,0 +1,13 @@
+<html>
+
+  <title>Bet</title>
+  <link rel="stylesheet" href="/bet.css"  type="text/css" />
+
+  <body>
+    <% if session[:message] %>
+      <p><%= session.delete(:message) %></p>
+    <% end %> 
+
+    <%== yield %>
+  </body>
+</html>
